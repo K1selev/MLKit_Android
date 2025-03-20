@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/conversationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Conversation will appear here..."
+            android:textSize="16sp"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/txtInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Smart Reply will appear here"
+            android:inputType="textMultiLine"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/btnGenerateReply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Generate Reply"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/btnChangeConversation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Change Conversation"
+            android:padding="8dp" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
